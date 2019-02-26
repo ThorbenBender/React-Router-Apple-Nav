@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import Nav from './Nav';
 import SubNav from './SubNav';
 import { Route } from 'react-router-dom';
+import TransitionGroup from "react-transition-group/TransitionGroup";
+import AnimatedNav from './Nav';
+import AnimatedSubNav from './SubNav';
 
 const StyledNavWrapper = styled.div`
   width: 50%;
@@ -23,18 +26,23 @@ const StyledNavWrapperContainer = styled.div`
     left: 0;
 
 `
+let firstChild = props => {
+    const childrenArray = React.Children.toArray(props.children);
+    return childrenArray[0] || null;
+};
+
 const NavWrapper = props => {
   return (
     <div>
         <StyledNavWrapperContainer>
         <StyledNavWrapper>
             {props.data.map(d => (
-            <Nav name={d.name} subLinks={d.subLinks} />
+            <AnimatedNav name={d.name} subLinks={d.subLinks} />
             ))}
         </StyledNavWrapper>
         </StyledNavWrapperContainer>
         {props.data.map((d, idx) => (
-        <Route path={`/${d.name}`} render={props => <SubNav key={idx} {...props} subLinks={d.subLinks} />} />
+        <Route path={`/${d.name}`} render={props => <SubNav {...props} subLinks={d.subLinks} />} />
         ))}
     </div>
     );
