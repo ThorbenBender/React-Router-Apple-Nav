@@ -1,175 +1,167 @@
-let navbar = [
-    {
-        title: 'Mac',
-        options: [
-            {
+const Data = [{
+        name: 'Mac',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'MacBook Air',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'MacBook Pro',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'iMac',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'iMac Pro',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'Mac Pro',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'Mac Mini',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'Accesories',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'High Sierra',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
                 name: 'Compare',
-                icon: 'https://image.flaticon.com/icons/svg/1157/1157081.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'iPad',
-        options: [
-            {
+        name: 'iPad',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131192.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131192.svg'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131192.svg'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131192.svg'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'iPhone',
-        options: [
-            {
+        name: 'iPhone',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131193.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131193.svg'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131193.svg'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131193.svg'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'Watch',
-        options: [
-            {
+        name: 'Watch',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131188.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131188.svg'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131188.svg'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131188.svg'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'TV',
-        options: [
-            {
+        name: 'TV',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131187.svg'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131187.svg'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131187.svg'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'https://image.flaticon.com/icons/svg/131/131187.svg'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'Music',
-        options: [
-            {
+        name: 'Music',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'src'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     },
     {
-        title: 'Support',
-        options: [
-            {
+        name: 'Support',
+        subLinks: [{
                 name: 'MacBook',
-                icon: 'src'
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'MacBook Air',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'MacBook Pro',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             },
             {
-                name: 'MacBook',
-                icon: 'src'
+                name: 'iMac',
+                img: 'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg'
             }
         ]
     }
 ];
 
-export default navbar;
+export default Data;

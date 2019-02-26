@@ -1,11 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import navbar from '../../data';
+import styled from 'styled-components';
+import { NavLink, Route } from 'react-router-dom';
 
-export default class Nav extends React.Component {
-    state = { navbar: navbar };
-
-    render() {
-        return <div>{this.state.navbar.map((nav) => <NavLink>{nav.title}</NavLink>)}</div>;
+const StyledNav = styled(NavLink)`
+	color: white;
+	text-decoration: none;
+	display: flex;
+    align-items: center;
+    &.active {
+        color: grey;
     }
-}
+`;
+
+const Nav = props => {
+	return <StyledNav to={`/${props.name}`}>{props.name}</StyledNav>;
+};
+
+export default Nav;
